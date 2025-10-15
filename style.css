@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+}
+
+body > div {
+    background-color: hsl(215, 32%, 27%);
+    box-shadow:1px 8px 2px 18px hsl(216, 53%, 12%);
+    border-radius: 3%;
+    padding: 20px;
+    width: 330px;
+    /* margin: auto; */
+}
+
+body > div > img {
+    border-radius: 3%;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    margin: 6% 0;
+}
+
+h1 + p {
+     line-height: 1.7rem; 
+}
+
+body > div > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin: 3% 0;
+}
+
+body > div > div > div img {
+    margin-right: 5%;
+}
+
+body > div > div > div {
+    display: flex;
+    align-items: center;
+}
+
+body > div > div > div {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    width: 120px;
+}
+
+body > div > div > div:last-child{
+    color: hsl(215, 27%, 60%);
+    width: 120px;
+}
+
+p {
+    font-size: 18px;
+    color: hsl(215, 27%, 60%);
+}
+
+hr ~ div {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+hr ~ div img {
+    border-radius: 50%;
+    border: solid 2px white;
+    width: 30px;
+    margin-right: 10px;
+}
+
+hr ~ div p {
+    font-size: 1rem;
+}
+
+span {
+    color: hsl(0, 0%, 100%);
+
+}
