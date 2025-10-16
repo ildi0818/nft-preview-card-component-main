@@ -29,11 +29,21 @@ body > div > img {
     width: 100%;
 }
 
+body > div > img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 h1 {
     font-size: 1.3rem;
     font-weight: 600;
     color: hsl(0, 0%, 100%);
     margin: 6% 0;
+}
+
+h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 h1 + p {
@@ -94,5 +104,9 @@ hr ~ div p {
 
 span {
     color: hsl(0, 0%, 100%);
+}
 
+span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
