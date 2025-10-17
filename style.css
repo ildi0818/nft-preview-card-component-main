@@ -22,17 +22,33 @@ body > div {
     padding: 20px;
     width: 330px;
     /* margin: auto; */
+
+    position: relative;
 }
 
-body > div > img {
+body > div > div:first-child img:first-child {
     border-radius: 3%;
     width: 100%;
+
+    display: block;
+
 }
 
-body > div > img:hover {
-    cursor: pointer;
-    opacity: 0.5;
+body > div > div:first-child img:last-child {
+    position: absolute;
+    right: 43%;
+    bottom: 65%;
+    opacity: 0;
 }
+
+body > div > div:first-of-type img:last-of-type:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* body > div > div img:hover {
+    opacity: 0.5;
+} */
 
 h1 {
     font-size: 1.3rem;
@@ -47,17 +63,17 @@ h1:hover {
 }
 
 h1 + p {
-     line-height: 1.7rem; 
+    line-height: 1.7rem; 
 }
 
-body > div > div:first-of-type {
+body > div > div:nth-child(4) {
     display: flex;
     justify-content: space-between;
     height: 30px;
     margin: 3% 0;
 }
 
-body > div > div > div img {
+body > div > div div img {
     margin-right: 5%;
 }
 
@@ -66,7 +82,7 @@ body > div > div > div {
     align-items: center;
 }
 
-body > div > div > div {
+body > div > div > div:first-child {
     color: hsl(178, 100%, 50%);
     font-weight: 600;
     width: 120px;
@@ -75,6 +91,10 @@ body > div > div > div {
 body > div > div > div:last-child{
     color: hsl(215, 27%, 60%);
     width: 120px;
+}
+
+body > div > div > div img {
+    
 }
 
 p {
@@ -96,6 +116,7 @@ hr ~ div img {
     border: solid 2px white;
     width: 30px;
     margin-right: 10px;
+    background-color: brown
 }
 
 hr ~ div p {
